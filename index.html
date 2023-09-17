@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Title</title>
+    <script defer type="module" src="src/js/index.js"></script>
+    <link href="src/assets/styles/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="game">
+            <div class="section-one main-menu sections">
+                <div class="description">
+                    <h1>
+                        Guess the number game
+                    </h1>
+                    <p></p>
+                </div>
+                <div id="play">
+                    <input type="button" value="play" id="playButton">
+                </div>
+            </div>
+            <div class="section-two set-range sections">
+                <div class="range">
+                    <h1>
+                        Set the range
+                    </h1>
+                    <form>
+                        <label>
+                            Min:
+                            <input type="text" value="1" name="min">
+                        </label>
+                        <label>
+                            Max:
+                            <input type="text" value="100" name="max">
+                        </label>
+                        <input type="submit" value="next" id="setRange">
+                    </form>
+                </div>
+            </div>
+            <div class="section-three guess-number sections">
+                <div>
+                    <h1>The number from <span id="min">1</span> to <span id="max">100</span> has been picked</h1>
+                    <p id="message"></p>
+                    <p id="guessCounter"></p>
+                </div>
+                <div class="guess">
+                    <label for="guess">Guess the number</label>
+                    <input type="text" value="" id="guess">
+                    <input type="button" value="guess" id="guessHandler">
+                </div>
+                <div class="hint">
+                    <p id="hint"></p>
+                </div>
+            </div>
+            <div class="refresh">
+                <label for="refreshGame"><div class="arrow-round"></div></label>
+                <input type="button" value="play again" id="refreshGame">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
